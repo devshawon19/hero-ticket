@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <button class="btn bg-[#caf8c3] text-lg text-[#1dd100] lg:mb-0 mb-4"><img
-                                src="images/seat-green.png" alt="">40
+                                src="images/seat-green.png" alt=""><span id="seatAvailable">40</span>
                             Seats left</button>
                     </div>
                     <div class="bg-[#f7f8f8] flex flex-col gap-4 justify-center p-8 lg:items-stretch items-center">
@@ -182,196 +182,27 @@
                     </div>
                     <div class="grid grid-cols-2 gap-16">
                         <!-- Example of seat buttons -->
-                        <div class="flex gap-8">
+                        <div class="flex gap-8" id="seat-selector">
                             <button class="text-gray-800 font-bold py-2 px-4 rounded">
                                 A
                             </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
+                            <button 
+                                class="bus-seat bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
                                 A1
                             </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
+                            <button class="bus-seat bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
                                 A2
                             </button>
                         </div>
                         <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
+                            <button class="bus-seat bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
                                 A3
                             </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
+                            <button class="bus-seat bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
                                 A4
                             </button>
                         </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                B
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                B1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                B2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                B3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                B4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                C
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                C1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                C2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                C3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                C4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                D
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                D1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                D2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                D3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                D4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                E
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                E1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                E2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                E3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                E4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                F
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                F1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                F2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                F3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                F4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                G
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                G1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                G2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                G3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                G4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                H
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                H1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                H2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                H3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                H4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                I
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                I1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                I2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                I3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                I4
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="text-gray-800 font-bold py-2 px-4 rounded">
-                                J
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                J1
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                J2
-                            </button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                J3
-                            </button>
-                            <button class="bg-[#f0f0f0] hover:bg-[#1dd100] text-gray-800 font-bold py-2 px-4 rounded">
-                                J4
-                            </button>
-                        </div>
+
 
                     </div>
                 </div>
@@ -403,15 +234,9 @@
                         <br>
                         <hr class="border-dashed">
                         <br>
-                        <div class="flex justify-between">
-                            <h3>c2</h3>
-                            <h3>Economy</h3>
-                            <h3>550</h3>
-                        </div>
-                        <div class="flex justify-between">
-                            <h3>c2</h3>
-                            <h3>Economy</h3>
-                            <h3>550</h3>
+                        <!-- dynamic ticket details holder -->
+                        <div id="ticket-details">
+
                         </div>
                         <br>
                         <hr>
@@ -449,8 +274,7 @@
                     <div>
                         <div class="my-6">
                             <h3 class="inter-semibold text-base">Passenger Name*</h3>
-                            <input type="text" placeholder="Enter your name"
-                                class="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                         </div>
                         <div class="my-6">
                             <h3 class="inter-semibold text-base">Phone Number*</h3>
@@ -459,14 +283,17 @@
                         </div>
                         <div class="my-6">
                             <h3 class="inter-semibold text-base">Email ID</h3>
-                            <input type="text" placeholder="Enter your email id"
-                                class="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter your email id" class="input input-bordered w-full" />
                         </div>
-                        <button class="btn w-full bg-[#1dd100] text-white text-base">Next</button>
+                        <button class="btn w-full bg-[#1dd100] text-white text-base" disabled>Next</button>
 
                         <div class="flex justify-around my-6">
-                            <p><u>Terms and Conditions</u></p>
-                            <p><u>Cancellation Policy</u></p>
+                            <a href="#">
+                                <p><u>Terms and Conditions</u></p>
+                            </a>
+                            <a href="#">
+                                <p><u>Cancellation Policy</u></p>
+                            </a>
                         </div>
                     </div>
                 </div>

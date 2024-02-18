@@ -14,3 +14,46 @@ function goToTicket(){
     */
 }
 
+document.addEventListener('click', seatSelected);
+
+function seatSelected(event){
+    const clickedButton = event.target;
+    // get the element you clicked
+    if(clickedButton.classList.contains('bus-seat') && !clickedButton.classList.contains('seat-selected') ) {
+        const seatNumber = clickedButton.innerText;
+        // create a div to hold 3 info of each tickets
+        const  ticketDetailsHolder = document.createElement('div');
+        ticketDetailsHolder.classList.add('flex', 'justify-between');
+
+
+        // create those 3 info of each tickets and append them to the parent element
+
+        // declare the seat name as selected seat
+        const seatName = document.createElement('h3');
+        seatName.innerText = seatNumber
+        ticketDetailsHolder.appendChild(seatName);
+
+        // declare the seat type(it's static)
+        const seatType = document.createElement('h3');
+        seatType.innerText = 'Economy';
+        ticketDetailsHolder.appendChild(seatType);
+
+        // declare the seat price
+        const perTicketCost = document.createElement('h3');
+        perTicketCost.innerText = 550;
+        ticketDetailsHolder.appendChild(perTicketCost);
+
+        // push the ticket info to the UI
+        const wholeTicketDetails = document.getElementById('ticket-details');
+        wholeTicketDetails.appendChild(ticketDetailsHolder);
+        
+
+
+        // highlight the button clicked
+        clickedButton.classList.remove('bg-[#f0f0f0]');
+        clickedButton.classList.add('bg-[#1dd100]');
+        clickedButton.classList.add(('seat-selected'));
+    }
+}
+
+
