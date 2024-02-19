@@ -28,24 +28,28 @@
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
+
 .inter-bold {
     font-family: "Inter", sans-serif;
     font-weight: 700;
 }
+
 .inter-semibold {
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
+
 .inter-medium {
     font-family: "Inter", sans-serif;
     font-weight: 500;
 }
+
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
 
 .vertical-line {
-    border-left: 2px dashed rgba(3, 7, 18, 0.3); 
+    border-left: 2px dashed rgba(3, 7, 18, 0.3);
     margin-top: 20px;
 }

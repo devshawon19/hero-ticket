@@ -143,13 +143,13 @@ function checkRequiredFields() {
 
     // Enable the button only if both required fields have values and name is only string and phone number is only number
     if (textValue !== '' && numberValue !== '' && !isNaN(numberValue) && selectedSeats > 1) {
-      nextButton.removeAttribute('disabled');
-      modalLink.setAttribute('href', '#my_modal_8')
+        nextButton.removeAttribute('disabled');
+        modalLink.setAttribute('href', '#my_modal_8')
     } else {
-      nextButton.setAttribute('disabled', 'disabled');
+        nextButton.setAttribute('disabled', 'disabled');
     }
-  }
+}
 
-  // Add event listeners to the input fields to check for changes
-  inputName.addEventListener('input', checkRequiredFields);
-  inputPhone.addEventListener('input', checkRequiredFields);
+// Add event listeners to the input fields to check for changes
+inputName.addEventListener('input', checkRequiredFields);
+inputPhone.addEventListener('input', checkRequiredFields);
