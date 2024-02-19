@@ -24,6 +24,7 @@ document.addEventListener('click', seatSelected);
 // global variables
 const grandTotal = document.getElementById('grand-total');
 const discountTotal = document.getElementById('discount-total');
+const couponForm = document.getElementById('coupon-form');
 let selectedSeats = 0;
 let totalMoney = 0;
 
@@ -70,6 +71,7 @@ function seatSelected(event) {
         totalMoney = selectedSeats * 550;
         const totalMoneyUi = document.getElementById('ticket-price-total');
         totalMoneyUi.innerText = totalMoney;
+        grandTotal.innerText = totalMoney;
 
 
 
@@ -115,6 +117,7 @@ function applyCoupon() {
         grandTotal.innerText = totalMoney;
         couponInput.value = ''
         applyButton.disabled = true;
+        couponForm.classList.add('hidden');
     }
     if (couponInput.value === 'Couple 20') {
         let getDiscount = totalMoney * 0.20;
@@ -123,6 +126,30 @@ function applyCoupon() {
         grandTotal.innerText = totalMoney;
         couponInput.value = ''
         applyButton.disabled = true;
+        couponForm.classList.add('hidden');
     }
 }
 
+// form validation
+const inputName = document.getElementById('input-name'); /* required */
+const inputPhone = document.getElementById('input-phone'); /* required */
+const inputEmail = document.getElementById('input-email');
+const nextButton = document.getElementById('next-button');
+const modalLink = document.getElementById('modal-link');
+
+function checkRequiredFields() {
+    const textValue = inputName.value;
+    const numberValue = inputPhone.value;
+
+    // Enable the button only if both required fields have values and name is only string and phone number is only number
+    if (textValue !== '' && numberValue !== '' && !isNaN(numberValue) && selectedSeats > 1) {
+      nextButton.removeAttribute('disabled');
+      modalLink.setAttribute('href', '#my_modal_8')
+    } else {
+      nextButton.setAttribute('disabled', 'disabled');
+    }
+  }
+
+  // Add event listeners to the input fields to check for changes
+  inputName.addEventListener('input', checkRequiredFields);
+  inputPhone.addEventListener('input', checkRequiredFields);

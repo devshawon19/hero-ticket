@@ -44,3 +44,8 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
+
+.vertical-line {
+    border-left: 2px dashed rgba(3, 7, 18, 0.3); 
+    margin-top: 20px;
+}
